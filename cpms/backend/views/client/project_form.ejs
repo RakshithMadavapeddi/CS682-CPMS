@@ -1,0 +1,58 @@
+<h1>Create a new project</h1>
+
+<form method="POST" action="/api/projects" enctype="multipart/form-data">
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+  </div>
+
+  <div>
+    <label for="admin">Administrators:</label>
+    <textarea id="admin" name="admin" required></textarea>
+  </div>
+
+  <div>
+    <label for="skills">Skills & technologies required:</label>
+    <textarea id="skills" name="skills" required></textarea>
+  </div>
+
+  <div>
+    <label for="deadline">Project anticipated deadline:</label>
+    <input type="date" id="deadline" name="deadline" required>
+  </div>
+
+  <div>
+    <label for="resources">Resources provided:</label>
+    <textarea id="resources" name="resources" required></textarea>
+  </div>
+
+  <div>
+    <label for="file">Attach file (PDF only, max 25MB):</label>
+    <input type="file" id="file" name="file" accept=".pdf" required>
+  </div>
+
+  <div>
+    <button type="submit">Create Project</button>
+  </div>
+</form>
+
+
+  <div>
+    <label for="resources">Resources provided:</label>
+    <textarea id="resources" name="resources" required></textarea>
+  </div>
+
+  <div>
+    <label for="file">Attach file (PDF only, max 25MB):</label>
+    <input type="file" id="file" name="file" accept=".pdf" required>
+  </div>
+
+  <div>
+    <button type="submit">Create Project</button>
+  </div>
+</form>

@@ -1,0 +1,18 @@
+<!-- HTML for student dashboard -->
+<div class="container">
+    <h1>Welcome, <%= user.name %>!</h1>
+    <h2>My Courses:</h2>
+    <% if (user.courses.length > 0) { %>
+      <ul>
+        <% user.courses.forEach(course => { %>
+          <li><%= course.name %> - <a href="/courses/<%= course.id %>/pages">View Pages</a></li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <p>You are not currently enrolled in any courses.</p>
+    <% } %>
+    <a href="/users/<%= user.id %>/edit" class="btn btn-primary">Edit Profile</a>
+    <form action="/logout" method="POST">
+      <button type="submit" class="btn btn-secondary">Logout</button>
+    </form>
+</div>

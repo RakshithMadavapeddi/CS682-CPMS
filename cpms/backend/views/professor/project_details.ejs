@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= project.title %></title>
+  </head>
+  <body>
+    <h1><%= project.title %></h1>
+    <p><%= project.description %></p>
+    <ul>
+      <li>Administrators: <%= project.administrators %></li>
+      <li>Skills & Technologies Required: <%= project.skills %></li>
+      <li>Anticipated Deadline: <%= project.deadline %></li>
+      <li>Resources Provided: <%= project.resources %></li>
+      <% if(project.attachment) { %>
+        <li>Attachment: <a href="<%= project.attachment %>">Download Attachment</a></li>
+      <% } %>
+    </ul>
+    <a href="/client/project-roster">Back to Project Roster</a>
+  </body>
+</html>

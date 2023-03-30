@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Client Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to your dashboard</h1>
+    <div>
+      <h2>Projects</h2>
+      <a href="/client/create-project">Create New Project</a>
+      <% if (projects.length > 0) { %>
+        <ul>
+          <% for (var i = 0; i < projects.length; i++) { %>
+            <li>
+              <h3><%= projects[i].title %></h3>
+              <p><%= projects[i].description %></p>
+              <a href="/client/edit-project/<%= projects[i]._id %>">Edit</a>
+              <form action="/api/projects/<%= projects[i]._id %>" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit">Delete</button>
+              </form>
+            </li>
+          <% } %>
+        </ul>
+      <% } else { %>
+        <p>You have not created any projects yet.</p>
+      <% } %>
+    </div>
+    <div>
+      <h2>Profile</h2>
+      <p>Name: <%= user.name %></p>
+      <p>Email: <%= user.email %></p>
+      <a href="/client/edit-profile">Edit Profile</a>
+    </div>
+    <div>
+      <a href="/logout">Logout</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<h1><%= course.name %></h1>
+
+<ul>
+  <li>Session: <%= course.session %></li>
+  <li>Year: <%= course.year %></li>
+  <li>Description: <%= course.description %></li>
+  <li>
+    Professor: <%= course.professor.name %>
+  </li>
+  <li>
+    Students:
+    <ul>
+      <% for(let i=0; i<course.students.length; i++) { %>
+        <li><%= course.students[i].name %></li>
+      <% } %>
+    </ul>
+  </li>
+  <li>
+    Projects:
+    <ul>
+      <% for(let i=0; i<course.projects.length; i++) { %>
+        <li><%= course.projects[i].name %></li>
+      <% } %>
+    </ul>
+  </li>
+</ul>

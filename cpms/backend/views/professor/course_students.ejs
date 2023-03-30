@@ -1,0 +1,25 @@
+<h1>Course Students</h1>
+
+<ul>
+  <% for(let i=0; i<students.length; i++) { %>
+    <li><%= students[i].name %></li>
+  <% } %>
+</ul>
+
+<form method="POST" action="/professor/course/<%= course._id %>/add_student">
+  <div>
+    <label for="student">Add Student:</label>
+    <select id="student" name="student" required>
+      <% for(let i=0; i<allStudents.length; i++) { %>
+        <% const student = allStudents[i]; %>
+        <% if (students.every((s) => s._id !== student._id)) { %>
+          <option value="<%= student._id %>"><%= student.name %></option>
+        <% } %>
+      <% } %>
+    </select>
+  </div>
+
+  <div>
+    <button type="submit">Add Student</button>
+  </div>
+</form>

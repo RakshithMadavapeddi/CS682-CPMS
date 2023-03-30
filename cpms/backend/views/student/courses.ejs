@@ -1,0 +1,9 @@
+<h1>All Courses</h1>
+
+<ul>
+  <% for(let i=0; i<courses.length; i++) { %>
+    <li>
+      <a href="/student/course/<%= courses[i]._id %>"><%= courses[i].name %></a>
+    </li>
+  <% } %>
+</ul>
