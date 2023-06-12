@@ -1,0 +1,296 @@
+.formOnboarding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96.5vh; 
+    background-color: white;
+}
+
+.formOnboarding-container{
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    height: 589px;
+    z-index: 10;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 2.25px solid var(--cams-blue);
+}
+
+
+.formOnboarding-actualForm{
+    width: 425px;
+    height: 589px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.formOnboarding-Logo-Help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 52.5px;
+    margin-bottom: 25px;
+}
+
+
+.formOnboarding-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 52.5px;
+  }
+
+
+
+.formOnboarding-help { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: 27px;
+    padding: 09px 08px 06.5px 08px;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 50.5px;
+}
+
+.formOnboarding-help:hover {
+    transition:  0.25s ease-in-out;
+    padding: 09px 08px 06.5px 08px;
+    border-radius: 50px;
+    /*color: var(--primary-color);*/
+    cursor: pointer;
+    background: #0099eb1d;
+}
+
+.formOnboarding-help .qSvg path{
+    fill: var(--cams-blue);
+}
+
+.sign-up-to-continue{
+    display: flex;
+    flex-direction: column;
+    margin-left: 52.5px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-dark);
+}
+
+.formOnboarding-input-fields{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 10px;
+}
+
+
+.formOnboarding-newPassword{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-left: 52.5px;
+}
+
+.formOnboarding-newPassword .formOnboarding-newPassword-input{
+    left: 18px;
+    width:285px;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #E9E9E9;
+    border-radius: 6px;
+    background-color: transparent;
+    padding-left: 18px;
+}
+
+.formOnboarding-newPassword .formOnboarding-newPassword-input:focus {
+    outline: none;
+    border: 2px solid var(--cams-blue);
+}
+
+.formOnboarding-newPassword .formOnboarding-newPassword-label {
+    position: absolute;
+    pointer-events: none;
+    margin-top: 14px;
+    width:112px;
+    left: 70px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #9F9F9F;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.formOnboarding-newPassword  .formOnboarding-newPassword-input.focused ~ .formOnboarding-newPassword-label,
+.formOnboarding-newPassword  .formOnboarding-newPassword-label.focused {
+    padding-left: 5px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 500;
+    right: 10px;
+    color: var(--cams-blue);
+    background-color: #fff;
+}
+
+.formOnboarding-confirmPassword{
+    display: flex;
+    flex-direction: column;
+    width: 305px; 
+    margin-top: 32px;
+    margin-left: 52.5px;
+}
+
+.formOnboarding-confirmPassword .formOnboarding-confirmPassword-input{
+    left: 18px;
+    width:285px;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #E9E9E9;
+    border-radius: 6px;
+    background-color: transparent;
+    padding-left: 18px;
+}
+
+.formOnboarding-confirmPassword .formOnboarding-confirmPassword-input:focus {
+    outline: none;
+    border: 2px solid var(--cams-blue);
+}
+
+.formOnboarding-confirmPassword .formOnboarding-confirmPassword-label {
+    position: absolute;
+    width:143px;
+    pointer-events: none;
+    margin-top: 14px;
+    left: 70px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #9F9F9F;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.formOnboarding-confirmPassword .formOnboarding-confirmPassword-input.focused ~ .formOnboarding-confirmPassword-label,
+.formOnboarding-confirmPassword .formOnboarding-confirmPassword-label.focused {
+    padding-left: 5px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 500;
+    right: 10px;
+    color: var(--cams-blue);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+.formOnboarding-Student-ID{
+    display: flex;
+    flex-direction: column;
+    width: 305px; 
+    margin-top: 24px;
+    margin-left: 52.5px;
+}
+
+.formOnboarding-Student-ID .formOnboarding-Student-ID-input{
+    left: 18px;
+    width:285px;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #E9E9E9;
+    border-radius: 6px;
+    background-color: transparent;
+    padding-left: 18px;
+}
+
+.formOnboarding-Student-ID .formOnboarding-Student-ID-input:focus {
+    outline: none;
+    border: 2px solid var(--cams-blue);
+}
+
+.formOnboarding-Student-ID .formOnboarding-Student-ID-label {
+    position: absolute;
+    width:196px;
+    pointer-events: none;
+    margin-top: 14px;
+    left: 70px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #9F9F9F;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.formOnboarding-Student-ID .formOnboarding-Student-ID-input.focused ~ .formOnboarding-Student-ID-label,
+.formOnboarding-Student-ID .formOnboarding-Student-ID-label.focused {
+    padding-left: 5px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 500;
+    right: 10px;
+    color: var(--cams-blue);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+.formOnboarding-buttons{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 80px;
+}
+
+.formOnboarding-buttons .formOnboarding-continue {
+    margin-left: 52.5px;
+    width:310px;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fff;
+    background-color: var(--cams-blue);
+    border: 2.5px solid transparent;
+}
+
+.formOnboarding-buttons .formOnboarding-continue:hover{
+    transition:  0.1s ease;
+    cursor: pointer;
+ }

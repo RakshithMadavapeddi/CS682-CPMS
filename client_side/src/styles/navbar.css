@@ -1,0 +1,242 @@
+.navbar{
+    top: 0;
+    position :relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 16px;
+    box-shadow: none;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Logo Div */
+
+.navbar-logo {
+    position: absolute;
+    left: 0;
+    z-index: 16;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 3rem;
+}
+
+
+/* Logo Main Wrapper */
+
+.navbar-camsLogo{
+    padding: 10px 12px 06px 12px;
+    border-radius: 10px;
+    border: 2.5px solid var(--cams-grey);
+} 
+
+/* Logo */
+
+.navbar-camsLogo img {
+    height: 30px;
+} 
+
+/* Logo Hover Effect */
+
+.navbar-camsLogo:hover {
+    padding: 10px 12px 06px 12px;
+    border-radius: 10px;
+    transition:  0.1s ease-in-out;
+    /*color: var(--primary-color);*/
+    cursor: pointer;
+    border: 2.5px solid var(--primary-color);
+}
+
+.navbar-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Help Container */
+
+.navbar-help{
+    height: 27px;
+    width: 27px;
+    padding: 09px 09px 06px 09px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.25rem;
+}
+
+.navbar-help .question .qSvg path {
+    fill: var(--cams-dark-grey);
+}
+
+/* Help Hover */
+
+.navbar-help:hover {
+    transition:  0.25s ease-in-out;
+    padding: 09px 09px 06px 09px;
+    border-radius: 50px;
+    /*color: var(--primary-color);*/
+    cursor: pointer;
+    background: rgba(203, 203, 203, 0.25);
+}
+
+
+
+/* Profile Container */
+
+.navbar-profile{
+    height: 27px;
+    width: 27px;
+    padding: 09px 09px 06px 09px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.navbar-profile .profile-icon .pSvg path {
+    fill: var(--cams-dark-grey);
+}
+
+/* Profile Hover */
+
+.navbar-profile:hover {
+    transition:  0.25s ease-in-out;
+    padding: 09px 09px 06px 09px;
+    border-radius: 50px;
+    /*color: var(--primary-color);*/
+    cursor: pointer;
+    background: rgba(203, 203, 203, 0.25);
+}
+
+.navbar-sign-out{
+    display: flex;
+    align-items: center;
+    margin-right: 1.525rem;
+}
+
+/* Sing Out Button */
+
+.navbar-sign-out-btn{
+    height: 32px;
+    width: 32px;
+    padding: 06px 06px 07px 09px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: 2px solid var(--cams-dark-grey);
+  }
+  .navbar-sign-out-btn .soSvg path {
+    fill: var(--cams-dark-grey);
+}
+  
+
+  /* Sing Out Button Hover */
+  
+  .navbar-sign-out-btn:hover{
+     transition:  0.1s ease;
+     cursor: pointer;
+     background-color:  rgba(203, 203, 203, 0.25);
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 60px;
+  }
+
+  /* Admin Courses Icon */
+
+.navbar-links  .courses{
+    object-fit: contain;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bfbfbf;
+    border-radius: 6px;
+    margin-right: 50px;
+  }
+  
+  /* Admin Courses Icon Hover */
+  
+.navbar-links  .courses:hover{
+     transition:  0.25s ease-in-out;
+     border-radius: 6px;
+     /*color: var(--primary-color);*/
+     color: var(--cams-blue);
+     cursor: pointer;
+  }
+
+  /* Admin Projects Icon */
+
+.navbar-links  .projects{
+    object-fit: contain;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bfbfbf;
+    border-radius: 6px;
+    margin-right: 50px;
+  }
+  
+  /* Admin Projects Icon Hover */
+  
+.navbar-links .projects:hover{
+     transition:  0.25s ease-in-out;
+     border-radius: 6px;
+     /*color: var(--primary-color);*/
+     color: var(--cams-blue);
+     cursor: pointer;
+  }
+
+    /* Admin Dashboard Icon */
+
+.navbar-links .dashboard{
+    object-fit: contain;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bfbfbf;
+    border-radius: 6px;
+  }
+  
+  /* Admin Dashboard Icon Hover */
+  
+  .navbar-links .dashboard:hover{
+     transition:  0.25s ease-in-out;
+     border-radius: 6px;
+     /*color: var(--primary-color);*/
+     color: var(--cams-blue);
+     cursor: pointer;
+  }

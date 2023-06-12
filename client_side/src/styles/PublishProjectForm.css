@@ -1,0 +1,1042 @@
+.form-popup-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  animation: fade-in 0.5s;
+}
+
+.form-popup {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+    width: 650px;
+    height: 750px;
+    background-color: #f8f8f8 ;
+    padding: 20px;
+    animation: fade-in 0.5s;
+    background-color: white;
+    border-radius: 20px;
+    border: 2.25px solid var(--cams-blue);
+  }
+
+   .project-form-page01-container{
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 750px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 20px;
+    border: 2.25px solid var(--cams-blue);
+  }
+  
+  .project-form-popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  
+  .project-form-popup-title{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-dark);
+    margin-left: 20px;
+  }
+
+
+  .project-form-popup-close-1 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+    height: 14px;
+    width: 14px;
+    padding: 8.5px 07px 5px 07px;
+    border-radius: 50px;
+    border: 2px solid var(--cams-blue);
+    margin-bottom: 6px;
+    margin-right: 20px;
+    background-color: none;
+  }
+
+  .project-form-popup-close-1:hover {
+    transition:  0.25s ease-in-out;
+    cursor: pointer;
+    background: #0099eb1d;
+  }
+  .project-form-popup-close-button-1 .cSvg path{
+    fill: var(--cams-blue);
+  }
+  
+  .attachment-container {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .attachment-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .create-project{
+    font-family: Poppins;
+    height: 46px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #f8f8f8;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--cams-blue);
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+
+  /* Sing Out Button Hover */
+  
+  .create-project:hover{
+     transition:  0.1s ease;
+     cursor: pointer;
+     background-color: #0083c9;
+  }
+
+  .project-form-p1-container{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .project-form-page01{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .project-form-p1-progress{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .project-form-p1-progress-one{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    fill: var(--cams-dark-grey);
+  }
+
+  .project-form-p1-progress-first-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    margin-bottom: 4.5px;
+  }
+
+  .project-form-p1-progress-two{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+
+  .project-form-p1-progress-second-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    margin-bottom: 4.5px;
+  }
+
+  .project-form-p1-progress-three{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-form-p1-progress-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-blue);
+    margin-bottom: 20px;
+  }
+
+
+  .project-form-p1-buttons{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .project-form-p1-buttons .project-form-p1-continue {
+    width:125px;
+    margin-top:20px;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fff;
+    background-color: var(--cams-blue);
+    border: 2.5px solid transparent;
+  }
+  
+  
+  .project-form-p1-buttons .project-form-p1-continue:hover{
+    transition:  0.1s ease;
+    cursor: pointer;
+  }
+
+
+  .project-form-page01-fullName-ID{
+    display: flex;
+  }
+
+
+  .project-form-page01-fullName-ID .project-form-page01-fullName-ID-input{
+    width:100%;
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #E9E9E9;
+    border-radius: 6px;
+    background-color: transparent;
+    padding-left: 18px;
+    box-shadow: none;
+  }
+
+.project-form-page01-fullName-ID .project-form-page01-fullName-ID-input:focus {
+    outline: none;
+    border: 2px solid var(--cams-blue);
+}
+
+.project-form-page01-fullName-ID .project-form-page01-fullName-ID-label {
+    position: absolute;
+    width: 93px;
+    pointer-events: none;
+    margin-top: 14px;
+    left: 60px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #9F9F9F;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.project-form-page01-fullName-ID .project-form-page01-fullName-ID-input.focused ~ .project-form-page01-fullName-ID-label,
+.project-form-page01-fullName-ID .project-form-page01-fullName-ID-label.focused {
+    padding-left: 5px;
+    margin-top: -10px;
+    font-size: 15.5px;
+    font-weight: 400;
+    right: 10px;
+    color: var(--cams-blue);
+    background-color: white;
+}
+
+
+.formProject-p1-date{
+  display: flex;
+  margin-top: 20px;
+}
+
+
+
+.formProject-p1-date .formProject-p1-date-input{
+  width:100%;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #E9E9E9;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-left:  18px;
+  padding-right: 18px;
+  box-shadow: none;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+background: url('../assets/calendar.svg') no-repeat;
+color: var(--cams-blue);
+background-size: cover;
+cursor: pointer;
+width: 20px;
+height: 20px;
+}
+
+
+.formProject-p1-date .formProject-p1-date-label {
+  position: absolute;
+  width: 200px;
+  pointer-events: none;
+  margin-top: 14px;
+  left: 60px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #9F9F9F;
+  transition: all 0.2s ease;
+  background-color: white;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.formProject-p1-date  .formProject-p1-date-input.focused ~ .formProject-p1-date-label,
+.formProject-p1-date  .formProject-p1-date-label.focused {
+  padding-left: 5px;
+  margin-top: -10px;
+  color: var(--cams-blue);
+  background-color: white;
+}
+
+
+
+
+.formProject01-message{
+  display: flex;
+  margin-top: 20px;
+}
+
+.formProject01-message .formProject01-message-input{
+  width:100%;
+  height: 250px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #E9E9E9;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-top: 18px;
+  resize: none;
+} 
+
+.formProject01-message .formProject01-message-input:focus {
+  outline: none;
+  border: 2px solid var(--cams-blue);
+}
+
+.formProject01-message .formProject01-message-label {
+  position: absolute;
+  width:145px;
+  pointer-events: none;
+  margin-top: 14px;
+  left: 60px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #9F9F9F;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.formProject01-message .formProject01-message-input.focused ~ .formProject01-message-label,
+.formProject01-message .formProject01-message-label.focused {
+  padding-left: 5px;
+  margin-top: -10px;
+  right: 10px;
+  color: var(--cams-blue);
+  background-color: white;
+}
+
+
+
+
+.formProject01-Admins{
+  display: flex;
+  margin-top: 20px;
+}
+
+.formProject01-Admins .formProject01-Admins-input{
+  width:100%;
+  height: 30px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #E9E9E9;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-left: 18px;
+  box-shadow: none;
+}
+
+.formProject01-Admins .formProject01-Admins-input:focus {
+  outline: none;
+  border: 2px solid var(--cams-blue);
+}
+
+.formProject01-Admins .formProject01-Admins-label {
+  position: absolute;
+  width:170px;
+  pointer-events: none;
+  margin-top: 14px;
+  left: 60px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #9F9F9F;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.formProject01-Admins .formProject01-Admins-input.focused ~ .formProject01-Admins-label,
+.formProject01-Admins .formProject01-Admins-label.focused {
+  padding-left: 5px;
+  margin-top: -10px;
+  color: var(--cams-blue);
+  background-color: white;
+}
+
+
+
+
+
+
+
+.project-form-p2-container{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+.project-form-p2-progress{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.project-form-p2-progress-one{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: var(--cams-dark-grey);
+}
+
+.project-form-p2-progress-first-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  margin-bottom: 4.5px;
+}
+
+.project-form-p2-progress-two{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.project-form-p2-progress-second-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  margin-bottom: 4.5px;
+}
+
+.project-form-p2-progress-three{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-form-p2-progress-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  margin-bottom: 20px;
+}
+
+
+.project-form-page02{
+  display:flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+
+.formProject02-skills{
+  display: flex;
+  margin-top: 5px;
+}
+
+.formProject02-skills .formProject02-skills-input{
+  width:100%;
+  height: 205.5px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #E9E9E9;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-top: 18px;
+  resize: none;
+}
+
+.formProject02-skills .formProject02-skills-input:focus {
+  outline: none;
+  border: 2px solid var(--cams-blue);
+}
+
+.formProject02-skills .formProject02-skills-label {
+  position: absolute;
+  width:230px;
+  pointer-events: none;
+  margin-top: 14px;
+  left: 60px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #9F9F9F;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.formProject02-skills .formProject02-skills-input.focused ~ .formProject02-skills-label,
+.formProject02-skills .formProject02-skills-label.focused {
+  padding-left: 5px;
+  margin-top: -10px;
+  right: 10px;
+  color: var(--cams-blue);
+  background-color: white;
+}
+
+
+
+
+.formProject02-resources{
+  display: flex;
+  margin-top: 20px;
+}
+
+.formProject02-resources .formProject02-resources-input{
+  width:100%;
+  height: 205.5px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #E9E9E9;
+  background-color: transparent;
+  border-radius: 6px;
+  padding-left: 18px;
+  padding-top: 18px;
+  resize: none;
+}
+
+.formProject02-resources .formProject02-resources-input:focus {
+  outline: none;
+  border: 2px solid var(--cams-blue);
+}
+
+.formProject02-resources .formProject02-resources-label {
+  position: absolute;
+  width:152.5px;
+  pointer-events: none;
+  margin-top: 14px;
+  left: 60px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #9F9F9F;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.formProject02-resources .formProject02-resources-input.focused ~ .formProject02-resources-label,
+.formProject02-resources .formProject02-resources-label.focused {
+  padding-left: 5px;
+  margin-top: -10px;
+  right: 10px;
+  color: var(--cams-blue);
+  background-color: white;
+}
+
+.project-form-p2-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formProject02-previous{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.formProject02-continue{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+
+.project-form-p2-buttons .project-form-p2-continue {
+  width:125px;
+  margin-top:20px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+}
+
+
+.project-form-p2-buttons .project-form-p2-continue:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+}
+
+.project-form-p2-buttons .project-form-p2-previous {
+  width:125px;
+  margin-top:20px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+}
+
+
+.project-form-p2-buttons .project-form-p2-previous:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+}
+
+
+
+.project-form-p3-container{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.project-form-p3-progress{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.project-form-p3-progress-one{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: var(--cams-dark-grey);
+}
+
+.project-form-p3-progress-first-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  margin-bottom: 4.5px;
+}
+
+.project-form-p3-progress-two{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.project-form-p3-progress-second-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  margin-bottom: 4.5px;
+}
+
+.project-form-p3-progress-three{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-form-p3-progress-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  margin-bottom: 20px;
+}
+
+.project-form-p3-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.formProject03-previous{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.formProject03-submit{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+
+.project-form-p3-buttons .project-form-p3-submit {
+  width:125px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+}
+
+
+.project-form-p3-buttons .project-form-p3-submit:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+}
+
+.project-form-p3-buttons .project-form-p3-previous {
+  width:125px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+}
+
+
+.project-form-p3-buttons .project-form-p3-previous:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+}
+
+.attachment-container {
+  border: 1.5px dashed var(--cams-blue);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 440px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 151, 235, 0.17);
+}
+
+.attachment-container p {
+  font-size: 14px;
+  color: #666;
+}
+
+.uploadFile{
+  margin-top: 75px;
+  margin-bottom: 20p;
+}
+
+.uploadFile-instructions{ 
+  
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.instructions-01{
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark);
+}
+
+.instructions-02{
+font-size: 14px;
+font-family: Poppins;
+font-weight: 300;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: var(--cams-dark);
+}
+
+.upload-button {
+  background-color: white;
+  color: var(--cams-blue);
+  border-radius: 5px;
+  width: 132px;
+  height: 45px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  outline: none;
+  border: 1.5px solid var(--cams-blue);
+}
+
+/* Hide the default file input button */
+input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Style the custom file input button */
+.custom-file-button {
+  background-color: white;
+  border: none;
+  color: var(--cams-blue);
+  width: 150px;
+  height: 45px;
+  padding-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  border: 1.5px solid var(--cams-blue);
+  margin-top: 5px;
+}
+
+/* Style the file input wrapper */
+.file-input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Position the custom file input button on top of the hidden default button */
+.file-input-wrapper input[type="file"] + .custom-file-button {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Style the selected file name */
+.selected-file-name {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.project-form-p4-container{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.finish {
+  width: 100%;
+  margin-top:30px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+
+.finish:hover {
+  transition:  0.1s ease;
+  cursor: pointer;
+}
+
+.thumbsup{
+  margin-top: 100px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.thumbsup .upSvg path{
+  fill: var(--cams-blue);
+}
+
+.successfully{
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark);
+}
+
+.project-attachment-container {
+  border: 1.5px dashed var(--cams-blue);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 515px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 151, 235, 0.17);
+}

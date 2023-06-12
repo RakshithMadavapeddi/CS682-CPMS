@@ -1,0 +1,334 @@
+
+  
+  .project-select-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  .project-select-list {
+    position: relative;
+    border-spacing: 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    min-width: 480px;
+    z-index: 10;
+  }
+  
+  .project-select-list  thead tr {
+    background-color: var(--cams-blue);
+    color: #ffffff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .project-select-list  tbody tr  td{
+    color: var(--cams-dark-grey);
+    text-align: left;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .project-select-name {
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  
+  .project-select-list thead tr td,
+  .project-select-list tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 20px ;
+  }
+
+
+.project-select-list thead tr td:first-child,
+.project-select-list tbody tr td:first-child {
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+.project-select-list thead tr td:nth-child(2),
+.project-select-list tbody tr td:nth-child(2) {
+  padding-left: 5px;  
+  padding-right: 30px;
+}
+
+.project-select-list thead tr td:first-child {
+  /* Add border-radius to the top-left corner of the first cell in the thead */
+  border-top-left-radius: 10px;
+}
+
+.project-select-list thead tr td:last-child {
+  /* Add border-radius to the top-right corner of the last cell in the thead */
+  border-top-right-radius: 10px;
+}
+
+
+.project-select-list tbody tr td:first-child {
+  /* Add left-side border to the first child of the row inside the tbody */
+  border-left: 1.5px solid var(--cams-blue);
+}
+
+.project-select-list tbody tr td:last-child {
+  /* Add right-side border to the last child of the row inside the tbody */
+  border-right: 1.5px solid transparent;
+}
+
+
+
+  
+  .project-select-list tbody {
+    display: block;
+    max-height: 350px;
+    overflow: auto;
+  }
+  
+  .project-select-list thead,
+  .project-select-list tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .project-select-list tbody tr {
+    border-bottom: thin solid #dddddd;
+  }
+  
+  .project-select-list tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .project-select-list tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .project-select-item {
+    font-weight: bold;
+    color: var(--cams-dark-grey);
+  }
+  
+  .project-select-check input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+  .project-select-modal-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    animation: fade-in 0.5s;
+  }
+  
+
+
+  .project-select-popup-content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+    width: 750px;
+    height: 600px;
+    background-color: #f8f8f8 ;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    animation: fade-in 0.5s;
+    background-color: white;
+    border-radius: 15px;
+    border: 2.25px solid var(--cams-blue);
+  }
+
+  .project-select-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .project-select-title{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-blue);
+    margin-bottom: 10px;
+  }
+
+
+  .project-select-close-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    }
+    
+    .project-select-close{
+    display: flex;
+    height: 15px;
+    width: 15px;
+    padding: 04px 03px 04px 05px;
+    border-radius: 50px;
+    border: 2px solid var(--cams-blue);
+    margin-bottom: 10px;
+    }
+    
+    .project-select-close:hover {
+    transition:  0.25s ease-in-out;
+    cursor: pointer;
+    background: #0099eb1d;
+    }
+    
+    .project-select-close-button .cSvg path{
+    fill: var(--cams-blue);
+    }
+    
+    .Preferences-set-button-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .Preferences-set-button-group .Preferences-set-save-button {
+      width:100%;
+      height: 46px;
+      border-radius: 5px;
+      font-size: 15.5px;
+      font-family: Poppins;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      color: #fff;
+      background-color: var(--cams-blue);
+      border: 2.5px solid transparent;
+      }
+      
+      
+      .Preferences-set-button-group .Preferences-set-save-button:hover{
+      transition:  0.1s ease;
+      cursor: pointer;
+      }
+      
+
+      .project-select-item .check-box{
+        box-shadow: none;
+        transform: scale(1.25);
+        cursor: pointer;
+
+      }
+
+      .project-select-check{
+        width: 60px;
+      }
+
+
+
+.just-a-blob{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  width: 100%;
+  color: transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--cams-blue);
+  margin-bottom: 32.5px;
+}
+
+
+
+/* Target the scrollbar within tbody */
+.project-select-list tbody::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+/* Scrollbar track (background) within tbody */
+.project-select-list tbody::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* background color of the track */ /* round corners for the track */
+  border-right: 1.5px solid var(--cams-blue); /* right-side border */
+}
+
+/* Scrollbar thumb (the moving part) within tbody */
+.project-select-list tbody::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scrollbar thumb */
+  border-radius: 5px; /* round corners for the thumb */
+  border: 2px solid transparent;
+}
+
+/* Hover effect on scrollbar thumb within tbody */
+.project-select-list tbody::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* change color when hovering */
+}
+
+
+.project-select-button {
+  width:150px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  background-color: var(--cams-blue);
+  border: 2.5px solid transparent;
+  }
+  
+  
+ .project-select-button:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  }

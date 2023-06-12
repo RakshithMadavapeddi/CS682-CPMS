@@ -1,0 +1,420 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+:root {
+    --cams-blue:#0097EB;
+    --cams-secondary-blue:#0F4B6C;
+    --cams-grey: #efefef;
+    --cams-dark: #0d2154;
+    --cams-dark-grey:#9F9F9F; 
+    --cams-bg-grey:#f6f6f6; 
+    --primary-color: rgb(0, 151, 235);
+    --primary-dark: #0d2154;
+    --secondary-color: #38ceef;
+  }
+  
+
+.Random{
+  position: relative;
+  padding-top: 340px;
+  padding-bottom: 540px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.mid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40vh;
+}
+
+.sub-navbar{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color: var(--cams-dark);
+}
+
+.active-projects{
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.active-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: var(--cams-blue);
+}
+
+.pending-projects{
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.pending-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: var(--cams-blue);
+}
+
+.client-admin{
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.client-admin:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: var(--cams-blue);
+}
+
+
+
+
+
+/* Course Administration */
+
+
+.coursepage-sub-navbar{
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  background-image: url('../assets/SecondaryNav.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sub-nav-right{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin-left: 6rem;
+}
+
+.sub-nav-left{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin-right: 6rem;
+}
+
+.sub-nav-title{
+  font-size: 21px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark-grey);
+}
+
+.sub-navbar-title{
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.sub-navbar-buttons{
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.set-students{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.set-students:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue) ;
+  border: 1.5px solid transparent;
+}
+
+
+.set-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.set-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue) ;
+  border: 1.5px solid transparent;
+}
+
+
+.assign-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.assign-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue) ;
+  border: 1.5px solid transparent;
+}
+
+                                            
+
+
+/* Project Administration */
+
+
+.project-sub-navbar{
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  background-image: url('../assets/SecondaryNav.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.project-sub-nav-right{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.project-sub-nav-left{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin-right: 5rem;
+}
+
+.project-sub-nav-title{
+  font-size: 21px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark-grey);
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.sub-navbar-buttons{
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.active-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.active-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue) ;
+  border: 1.5px solid transparent;
+}
+
+
+.pending-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.pending-projects:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue) ;
+  border: 1.5px solid transparent;
+}
+
+
+.client-admin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:225px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  background-color:  #fff ;
+  border: 1.5px solid var(--cams-blue);
+  margin-right: 20px;
+}
+
+
+.client-admin:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color:  var(--cams-blue);
+  border: 1.5px solid transparent;
+}

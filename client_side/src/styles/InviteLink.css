@@ -1,0 +1,1139 @@
+.modal {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+
+.invite-client{
+  font-family: Poppins;
+  height: 46px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid var(--cams-blue);
+  margin-left: 15px;
+}
+
+
+/* Sing Out Button Hover */
+
+.invite-client:hover{
+   transition:  0.1s ease;
+   cursor: pointer;
+   background-color: #0083c9;
+}
+
+
+
+.create-course-button{
+  font-family: Poppins;
+  height: 46px;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid var(--cams-blue);
+  margin-left: 15px;
+}
+
+
+
+.create-course-button:hover{
+   transition:  0.1s ease;
+   cursor: pointer;
+   background-color: #0083c9;
+}
+
+.open-button{
+  font-family: Poppins;
+  height: 46px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid var(--cams-blue);
+  margin-left: 15px;
+}
+
+
+/* Sing Out Button Hover */
+
+.open-button:hover{
+   transition:  0.1s ease;
+   cursor: pointer;
+   background-color: #0083c9;
+}
+
+.student-form-modal-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  animation: fade-in 0.5s;
+}
+
+
+
+.student-form-modal-content{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 100;
+  width: 450px;
+  height: 290px;
+  background-color: #f8f8f8 ;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  animation: fade-in 0.5s;
+  background-color: white;
+  border-radius: 15px;
+  border: 2.25px solid var(--cams-blue);
+}
+
+.student-form-top{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-form-title{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  margin-bottom: 15px;
+}
+
+
+.student-form-button-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-form-button-group .student-form-save-button {
+width:100%;
+margin-top:20px;
+height: 46px;
+border-radius: 5px;
+font-size: 15.5px;
+font-family: Poppins;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: #fff;
+background-color: var(--cams-blue);
+border: 2.5px solid transparent;
+}
+
+
+.student-form-button-group .student-form-save-button:hover{
+transition:  0.1s ease;
+cursor: pointer;
+}
+
+.student-form-input-name{
+display: flex;
+position: relative;
+box-shadow: none;
+}
+
+
+.student-form-input-name .student-form-input-name-input{
+width:100%;
+height: 30px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.student-form-input-name .student-form-input-name-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.student-form-input-name .student-form-input-name-label {
+position: absolute;
+width:142.5px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.student-form-input-name .student-form-input-name-input.focused ~ .student-form-input-name-label,
+.student-form-input-name .student-form-input-name-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+.student-form-input-email{
+display: flex;
+position: relative;
+box-shadow: none;
+margin-top: 20px;
+}
+
+.student-form-input-email .student-form-input-email-input{
+width:100%;
+height: 30px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.student-form-input-email .student-form-input-email-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.student-form-input-email .student-form-input-email-label {
+position: absolute;
+width:127px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.student-form-input-email .student-form-input-email-input.focused ~ .student-form-input-email-label,
+.student-form-input-email .student-form-input-email-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+.project-form-popup-close-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+background-color: #2ecc71;
+}
+
+.project-form-popup-close {
+display: flex;
+background-color: pink;
+height: 11px;
+width: 11px;
+padding: 7.5px 05px 4.75px 07px;
+border-radius: 50px;
+border: 2px solid var(--cams-blue);
+margin-bottom: 20px;
+margin-left: 0px;
+}
+
+.project-form-popup-close:hover {
+transition:  0.25s ease-in-out;
+cursor: pointer;
+background: #0099eb1d;
+}
+.project-form-popup-close-button .cSvg path{
+fill: var(--cams-blue);
+}
+
+.student-form-close-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+margin-bottom: 10px;
+margin-top: 16px;
+}
+
+.student-form-close{
+display: flex;
+height: 15px;
+width: 15px;
+padding: 04px 03px 04px 05px;
+border-radius: 50px;
+border: 2px solid var(--cams-blue);
+margin-bottom: 20px;
+}
+
+.student-form-close:hover {
+transition:  0.25s ease-in-out;
+cursor: pointer;
+background: #0099eb1d;
+}
+.student-form-close-button .cSvg path{
+fill: var(--cams-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.create-course-modal-wrapper{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 99;
+animation: fade-in 0.5s;
+}
+
+
+
+.create-course-modal-content{
+display: flex;
+position: absolute;
+flex-direction: column;
+z-index: 100;
+width: 450px;
+height: 400px;
+background-color: #f8f8f8 ;
+padding-right: 30px;
+padding-left: 30px;
+padding-top: 15px;
+padding-bottom: 18px;
+animation: fade-in 0.5s;
+background-color: white;
+border-radius: 15px;
+border: 2.25px solid var(--cams-blue);
+}
+
+.create-course-top{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.create-course-title{
+display: flex;
+justify-content: flex-start;
+width: 50%;
+display: flex;
+align-items: center;
+font-family: Poppins;
+font-size: 21px;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: var(--cams-blue);
+margin-bottom: 15px;
+}
+
+
+.create-course-button-group{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.create-course-button-group .create-course-save-button {
+width:100%;
+margin-top:20px;
+height: 46px;
+border-radius: 5px;
+font-size: 15.5px;
+font-family: Poppins;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: #fff;
+background-color: var(--cams-blue);
+border: 2.5px solid transparent;
+}
+
+
+.create-course-button-group .create-course-save-button:hover{
+transition:  0.1s ease;
+cursor: pointer;
+}
+
+.create-course-input-name{
+display: flex;
+position: relative;
+box-shadow: none;
+}
+
+
+.create-course-input-name .create-course-input-name-input{
+width:100%;
+height: 30px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.create-course-input-name .create-course-input-name-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.create-course-input-name .create-course-input-name-label {
+position: absolute;
+width:108px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.create-course-input-name .create-course-input-name-input.focused ~ .create-course-input-name-label,
+.create-course-input-name .create-course-input-name-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+.create-course-input-desc{
+display: flex;
+position: relative;
+box-shadow: none;
+margin-top: 20px;
+}
+
+.create-course-input-desc .create-course-input-desc-input{
+width:100%;
+height: 145px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.create-course-input-desc .create-course-input-desc-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.create-course-input-desc .create-course-input-desc-label {
+position: absolute;
+width:147px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.create-course-input-desc .create-course-input-desc-input.focused ~ .create-course-input-desc-email-label,
+.create-course-input-desc .create-course-input-desc-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+.create-course-close-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+}
+
+.create-course-popup-close {
+display: flex;
+background-color: pink;
+height: 11px;
+width: 11px;
+padding: 7.5px 05px 4.75px 07px;
+border-radius: 50px;
+border: 2px solid var(--cams-blue);
+margin-bottom: 20px;
+margin-left: 0px;
+}
+
+.create-course-close:hover {
+transition:  0.25s ease-in-out;
+cursor: pointer;
+background: #0099eb1d;
+}
+.project-form-popup-close-button .cSvg path{
+fill: var(--cams-blue);
+}
+
+.create-course-close-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+margin-bottom: 10px;
+margin-top: 16px;
+}
+
+.create-course-close{
+display: flex;
+height: 15px;
+width: 15px;
+padding: 04px 03px 04px 05px;
+border-radius: 50px;
+border: 2px solid var(--cams-blue);
+margin-bottom: 20px;
+}
+
+.create-course-close:hover {
+transition:  0.25s ease-in-out;
+cursor: pointer;
+background: #0099eb1d;
+}
+
+.create-course-close-button .cSvg path{
+fill: var(--cams-blue);
+}
+
+
+
+/* Client Invite Form */
+
+
+.client-form-modal-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+  animation: fade-in 0.5s;
+}
+
+
+
+.client-form-modal-content{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 100;
+  width: 450px;
+  height: 290px;
+  background-color: #f8f8f8 ;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  animation: fade-in 0.5s;
+  background-color: white;
+  border-radius: 15px;
+  border: 2.25px solid var(--cams-blue);
+}
+
+.client-form-top{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-form-title{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-blue);
+  margin-bottom: 15px;
+}
+
+
+.client-form-button-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-form-button-group .client-form-save-button {
+width:100%;
+margin-top:20px;
+height: 46px;
+border-radius: 5px;
+font-size: 15.5px;
+font-family: Poppins;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: #fff;
+background-color: var(--cams-blue);
+border: 2.5px solid transparent;
+}
+
+
+.client-form-button-group .client-form-save-button:hover{
+transition:  0.1s ease;
+cursor: pointer;
+}
+
+.client-form-input-name{
+display: flex;
+position: relative;
+box-shadow: none;
+}
+
+
+.client-form-input-name .client-form-input-name-input{
+width:100%;
+height: 30px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.client-form-input-name .client-form-input-name-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.client-form-input-name .client-form-input-name-label {
+position: absolute;
+width:142.5px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.client-form-input-name .client-form-input-name-input.focused ~ .client-form-input-name-label,
+.client-form-input-name .client-form-input-name-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+.client-form-input-email{
+display: flex;
+position: relative;
+box-shadow: none;
+margin-top: 20px;
+}
+
+.client-form-input-email .client-form-input-email-input{
+width:100%;
+height: 30px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+border: 2px solid #E9E9E9;
+background-color: transparent;
+border-radius: 6px;
+padding-left: 18px;
+padding-top: 18px;
+resize: none;
+box-shadow: none;
+}
+
+.client-form-input-email .client-form-input-email-input:focus {
+outline: none;
+border: 2px solid var(--cams-blue);
+}
+
+.client-form-input-email .client-form-input-email-label {
+position: absolute;
+width:127px;
+pointer-events: none;
+margin-top: 18px;
+left: 18px;
+font-size: 15px;
+font-family: Poppins;
+color: #9F9F9F;
+transition: all 0.2s ease;
+background-color: transparent;
+border-radius: 2px;
+padding-left: 5px;
+}
+
+.client-form-input-email .client-form-input-email-input.focused ~ .client-form-input-email-label,
+.client-form-input-email .client-form-input-email-label.focused {
+padding-left: 5px;
+margin-top: -10px;
+right: 10px;
+color: var(--cams-blue);
+background-color: white;
+}
+
+
+
+.client-form-close-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+margin-bottom: 10px;
+margin-top: 16px;
+}
+
+.client-form-close{
+display: flex;
+height: 15px;
+width: 15px;
+padding: 04px 03px 04px 05px;
+border-radius: 50px;
+border: 2px solid var(--cams-blue);
+margin-bottom: 20px;
+}
+
+.client-form-close:hover {
+transition:  0.25s ease-in-out;
+cursor: pointer;
+background: #0099eb1d;
+}
+.client-form-close-button .cSvg path{
+fill: var(--cams-blue);
+}
+
+ .csv-form-save-button {
+  width: 225px;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15.5px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark);
+  background-color: white;
+  border: 1.5px solid var(--cams-dark);
+  }
+  
+  
+ .csv-form-save-button:hover{
+  transition:  0.1s ease;
+  cursor: pointer;
+  background-color: whitesmoke;
+  }
+
+
+
+  .attachment-container {
+    border: 1.5px dashed var(--cams-blue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: 440px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 151, 235, 0.17);
+  }
+  
+  .attachment-container p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .uploadFile{
+    margin-top: 75px;
+    margin-bottom: 20px;
+  }
+  
+  .uploadFile-instructions{ 
+    
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .instructions-01{
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-dark);
+  }
+  
+  .instructions-02{
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: var(--cams-dark);
+  }
+  
+  .upload-button {
+    background-color: white;
+    color: var(--cams-blue);
+    border-radius: 5px;
+    width: 132px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    cursor: pointer;
+    outline: none;
+    border: 1.5px solid var(--cams-blue);
+  }
+  
+  /* Hide the default file input button */
+  input[type="file"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Style the custom file input button */
+  .custom-file-button {
+    background-color: white;
+    border: none;
+    color: var(--cams-blue);
+    width: 150px;
+    height: 45px;
+    padding-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    border: 1.5px solid var(--cams-blue);
+    margin-top: 5px;
+  }
+  
+  /* Style the file input wrapper */
+  .file-input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Position the custom file input button on top of the hidden default button */
+  .file-input-wrapper input[type="file"] + .custom-file-button {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Style the selected file name */
+  .selected-file-name {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+
+
+
+  .attachment-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99;
+    animation: fade-in 0.5s;
+  }
+  
+  
+  
+  .attachment-wrapper-modal-content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+    width: 550px;
+    height: 650px;
+    background-color: #f8f8f8 ;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    animation: fade-in 0.5s;
+    background-color: white;
+    border-radius: 15px;
+    border: 2.25px solid var(--cams-blue);
+  }
+  
+  .attachment-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .attachment-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--cams-blue);
+    margin-bottom: 15px;
+  }
+
+  .attachment-close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    }
+    
+    .attachment-close-button{
+    display: flex;
+    height: 15px;
+    width: 15px;
+    padding: 04px 03px 04px 05px;
+    border-radius: 50px;
+    border: 2px solid var(--cams-blue);
+    margin-bottom: 20px;
+    }
+    
+    .attachment-close-button:hover {
+    transition:  0.25s ease-in-out;
+    cursor: pointer;
+    background: #0099eb1d;
+    }
+    .attachment-close-button .cSvg path{
+    fill: var(--cams-blue);
+    }
+    
+
+    .attachment-button-group{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .attachment-button-group .attachment-save-button {
+    width:100%;
+    margin-top:10px;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 15.5px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fff;
+    background-color: var(--cams-blue);
+    border: 2.5px solid transparent;
+    }
+    
+    
+    .attachment-button-group .attachment-save-button:hover{
+    transition:  0.1s ease;
+    cursor: pointer;
+    }

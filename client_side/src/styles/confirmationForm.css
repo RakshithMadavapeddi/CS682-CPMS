@@ -1,0 +1,119 @@
+.ConfirmationPopupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+  animation: fade-in 0.5s;
+}
+
+.ConfirmationPopup {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 100;
+  width: 300px;
+  height: 145px;
+  background-color: #f8f8f8 ;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  animation: fade-in 0.5s;
+  background-color: white;
+  border-radius: 15px;
+  border: 2.25px solid var(--cams-blue);
+}
+
+
+
+
+
+.ConfirmationButtons{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yes{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.no{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.ConfirmationButtons .confirm-yes {
+width:100px;
+margin-top:25px;
+height: 46px;
+border-radius: 5px;
+font-size: 15.5px;
+font-family: Poppins;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: #fff;
+background-color: var(--cams-blue);
+border: 2.5px solid transparent;
+margin-bottom: 15px;
+}
+
+
+.ConfirmationButtons .confirm-yes:hover{
+transition:  0.1s ease;
+cursor: pointer;
+}
+
+
+.ConfirmationButtons .confirm-no {
+width:100px;
+margin-top:25px;
+height: 46px;
+border-radius: 5px;
+font-size: 15.5px;
+font-family: Poppins;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+color: var(--cams-dark-grey);
+background-color: var(--cams-grey);
+border: 2.5px solid transparent;
+margin-bottom: 15px;
+}
+
+
+.ConfirmationButtons .confirm-no:hover{
+transition:  0.1s ease;
+cursor: pointer;
+}
+
+
+.confirm-message{
+margin-top: 15px;
+display: flex;
+font-size: 18px;
+justify-content: center;
+font-family: Poppins;
+font-weight: 400;
+font-stretch: normal;
+font-style: normal;
+letter-spacing: normal;
+text-align: center;
+color: var(--cams-dark-grey);
+}
